@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta name="description" content="The Page Description">
 		<style type="text/css">@-ms-viewport{width: device-width;}</style>
-		<title>Events</title>
+		<title>Hack Nights Local Hack Day</title>
 		<link rel="stylesheet" href="css/layers.min.css" media="screen">
 		<link rel="stylesheet" href="css/font-awesome.min.css" media="screen"> 
 		<link rel="stylesheet" href="style.css" media="screen">
@@ -21,7 +21,7 @@
 		<link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152x152.png">			
 	</head>
 
-	<body class="portfolio">
+	<body class="single single-portfolio">
 
 		<header role="banner" class="transparent light">
 			<div class="row">
@@ -45,42 +45,51 @@
 			</div><!-- row -->	
 		</header>
 
+
 		<main role="main">
 			
-
 			<div id="main" class="row">
-				<div class="row-content buffer clear-after">
-					<ul class="inline cats filter-options">
-						<li data-group="upcoming">Upcoming Events</li>
-						<li data-group="past">Past Events</li>
-					</ul>
-					<div class="grid-items portfolio-section preload">
-						<article class="item column four" data-groups='["upcoming"]'>
-							<figure><img src="img/kickoffimage.png" alt=""></figure>
-							<a class="overlay" href="kickoff.html">
-								<div class="overlay-content">
-									<div class="post-type"><i class="icon icon-picture"></i></div>
-									<h2>Hack Nights Kickoff</h2>
-									<p>Come out an try out all of the cool tech we have to offer!</p>
-								</div><!-- overlay-content -->
-							</a><!-- overlay -->
-						</article>		
+				<div class="row-content buffer-left buffer-right buffer-bottom clear-after">
+					<div id="post-nav">
+						<ul class="clear-after reset plain">
+							<li id="prev-items" class="post-nav"><a href="kickoff.html"><i class="fa fa-chevron-left"></i><span class="label hidden-mobile">Prev</span></a></li> 
+							<li id="all-items" class="post-nav"><a href="event.html"><i class="icon icon-images"></i></a></li> 							 
+							<li id="next-items" class="post-nav"><a href="#"><span class="label hidden-mobile">Next</span><i class="fa fa-chevron-right"></i></a></li>  
+						</ul>
+					</div>
 					
-						<article class="item column four" data-groups='["upcoming"]'>
-							<figure><img src="img/localhackday.png" alt=""></figure>
-							<a class="overlay" href="localhackday.html">
-								<div class="overlay-content">
-									<div class="post-type"><i class="icon icon-camera"></i></div>
-									<h2>Local Hack Day 2016</h2>
-									<p>Join thousands of others around the world</p>
-								</div><!-- overlay-content -->
-							</a><!-- overlay -->
+					<div class="post-area clear-after">
+						<article role="main" class="column nine">
+							<h1>Local Hack Day</h1>
+							<p>Brought to you by Github, Major League Hacking, and Hack Nights! Local Hack Day is an awesome global event that will last for exactly 12 hours. You'll get to join thousands from around the world in coding up a project you'll show off at the end of the day. If you're in the OC area, please join us at our Local Hack Day :) </p>
+							<div class="gallery slider" data-autoplay="false" data-autoheight="true">
+								<figure>
+									<div><img src="img/Hack_Nights.png" alt=""></div>
+								</figure>
+							</div><!-- gallery -->						
 						</article>	
-						<div class="shuffle-sizer four"></div>
-					</div><!-- grid-items -->	
+
+						<aside role="complementary" class="sidebar column three last">
+							<div class="widget">
+								<h4>Signup</h4>
+								<p>Don't forget to sign up via Eventbrite to attend!</p>
+								<a href="https://localhackdayhacknights.eventbrite.com" class="button transparent">Register</a>
+							</div>													
+						</aside>
+
+					</div><!-- post-area -->							
+
+					<div class="meta-social">
+						<ul class="inline center">
+							<li><a href="#" class="twitter-share border-box"><i class="fa fa-twitter fa-lg"></i></a></li>
+							<li><a href="#" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
+							<li><a href="#" class="pinterest-share border-box"><i class="fa fa-pinterest fa-lg"></i></a></li>
+						</ul>
+					</div>
+					
 
 				</div><!-- row-content -->
-			</div><!-- row -->
+			</div><!-- row -->			
 		</main><!-- main -->
 
 		
