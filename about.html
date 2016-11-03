@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta name="description" content="The Page Description">
 		<style type="text/css">@-ms-viewport{width: device-width;}</style>
-		<title>Beetle - Contact</title>
+		<title>About Us</title>
 		<link rel="stylesheet" href="css/layers.min.css" media="screen">
 		<link rel="stylesheet" href="css/font-awesome.min.css" media="screen"> 
 		<link rel="stylesheet" href="style.css" media="screen">
@@ -21,7 +21,7 @@
 		<link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152x152.png">			
 	</head>
 
-	<body class="page">
+	<body class="single single-portfolio">
 
 		<header role="banner" class="transparent light">
 			<div class="row">
@@ -45,50 +45,46 @@
 			</div><!-- row -->	
 		</header>
 
-
 		<main role="main">
+			<div id="intro-wrap">
+				<div id="intro" class="preload darken" data-navigation="false" data-pagination="true" data-transition="fade">					
+					<div class="intro-item" style="background-image: url(img/landing.png);">
+						<div class="caption">
+							<h2>We help you get started with coding</h2>
+							<p>Whether you're a beginner or a master, come try something new!</p>
+							<!-- <a class="button white transparent" href="#">Read More</a> -->
+						</div><!-- caption -->				
+					</div>																	
+				</div><!-- intro -->
+			</div><!-- intro-wrap -->
+			<div id="main" class="row">
+				<div class="row-content buffer-left buffer-right buffer-bottom clear-after">
+					
+					<div class="post-area clear-after">
+						<article role="main" class="column nine">
+							<h1>Hack Nights Kickoff Event</h1>
+							<div class="gallery slider" data-autoplay="false" data-autoheight="true">
+								
+							</div><!-- gallery -->	
+							<p>For our first event, we're partnering with Wearhacks to bring out all the latest hardware. We'll have Oculus, HTC Vive, Cardboards, Pebble watches, and much much more available for you to get your hands on.</p>
+							
+						</article>	
 
-			<div id="main">
+					</div><!-- post-area -->							
 
-				<section class="row section">
-					<div class="row-content buffer even clear-after">
-						<div class="section-title"><h3>Contact Me</h3></div>	
-						<p>Please contact us if you have any questions regarding our organization or upcoming events.<br>Feel free to just say hi as well! <br></p>
-						<div class="column nine">
-							<form id="contact-form" class="contact-section" method="post" action="">
-								<span class="pre-input"><i class="icon icon-user"></i></span>
-								<input class="name plain buffer" type="text" name="name" placeholder="Full name">
-								<span class="pre-input"><i class="icon icon-email"></i></span>
-								<input class="email plain buffer" type="email" name="email" placeholder="Email address">
-								<textarea class="plain buffer" name="message" placeholder="Hi there..."></textarea>
-								<input id="send" class="plain button red" type="button" value="Send a Message">
-							</form>	
-							<div id="success"></div>
-						<p>If the contact form above is not working, please contact us directly: contact@hacknights.co</p>
-
-						</div>
-						<div class="column three last">
-							<div class="widget">
-								<h4>Location</h4>
-								<p>
-									Orange County, CA<br>
-								</p>
-							</div>
-							<div class="widget">
-								<h4>I am Social</h4>
-								<ul class="inline meta-social">
-									<li><a href="#" class="twitter-share border-box"><i class="fa fa-twitter fa-lg"></i></a></li>
-									<li><a href="#" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
-									<li><a href="#" class="instagram-share border-box"><i class="fa fa-instagram fa-lg"></i></a></li>
-								</ul>
-							</div>								
-						</div>
+					<div class="meta-social">
+						<ul class="inline center">
+							<li><a href="#" class="twitter-share border-box"><i class="fa fa-twitter fa-lg"></i></a></li>
+							<li><a href="#" class="facebook-share border-box"><i class="fa fa-facebook fa-lg"></i></a></li>
+							<li><a href="#" class="instagram-share border-box"><i class="fa fa-instagram fa-lg"></i></a></li>
+						</ul>
 					</div>
-				</section>
 
-			</div><!-- id-main -->
+				</div><!-- row-content -->
+			</div><!-- row -->			
 		</main><!-- main -->
 
+		
 		<footer role="contentinfo">
 			<div class="row">
 				<div class="row-content buffer clear-after">
@@ -127,25 +123,10 @@
 				</div><!-- row-content -->	
 			</div><!-- row -->	
 		</footer>
-
 		<script src="https://code.jquery.com/jquery.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>		
 		<script src="js/plugins.js"></script>
 		<script src="js/beetle.js"></script>
-		<script>
-		$(document).ready(function(){
-			$('#send').click(function(){
-				$(this).val('Sending ...');
-				$('#success p').remove();
-				$.post('contact/contact.php', $('#contact-form').serialize(), function(response) {
-					$('#success').html(response);
-					//$('#success').hide('slow');
-					$('#send').val('Send a Message');
-				});
-				return false;
-			});
-		});
-		</script>		
 
 	</body>
 
