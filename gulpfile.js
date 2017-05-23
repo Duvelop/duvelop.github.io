@@ -104,3 +104,7 @@ gulp.task('watch', function () {
     gulp.watch('../HTML/js/**/*.js', ['uglify']);
     gulp.watch('../HTML/*.html', ['htmlhint']);
 });
+
+gulp.task("heroku:production", function(){
+    console.log('hello'); // the task does not need to do anything.
+});
